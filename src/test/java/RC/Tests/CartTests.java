@@ -45,7 +45,7 @@ public class CartTests extends BaseTest {
 		int sum = cartPage.getProductsCost().stream().map(s -> Integer.parseInt(s)).reduce(0, (x, y) -> x - y);
 		
 		Assert.assertEquals(sum, totalInCart);
-		//System.out.println(sum);
+		System.out.println(sum);
 	}
 
 	@Test(dataProvider = "data")
