@@ -62,7 +62,6 @@ public class BaseTest {
 			if(browserName.toLowerCase().contains("headless")) {
 				options.addArguments("headless");
 			 }
-			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver(options);
 			driver.manage().window().setSize(new Dimension(1400,900));
 		} 
