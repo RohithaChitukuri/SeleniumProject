@@ -1,6 +1,7 @@
 package RC.Tests;
 
 import java.io.IOException;
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -29,11 +30,10 @@ public class CartTests extends BaseTest {
 		CartPage cartPage = new CartPage(driver);
 		cartPage.clickOnCart();
 		cartPage.getProductsCost().stream().forEach(s -> System.out.println(s));
-
 	}
 
 	@Test(dataProvider = "data",retryAnalyzer=RC.TestComponents.Retry.class)
-	public void checkTotal(HashMap<Object,Object> cartData) {
+	public void checkTotal(HashMap<Object,Object> cartData) throws InterruptedException {
 		LoginPage loginPage = new LoginPage(driver);
 		loginPage.goTo();
 		loginPage.loginApplication((String)cartData.get("userId"), (String)cartData.get("password"));
@@ -42,10 +42,10 @@ public class CartTests extends BaseTest {
 		CartPage cartPage = new CartPage(driver);
 		cartPage.clickOnCart();
 		int totalInCart = Integer.parseInt(cartPage.getTotal());
-		int sum = cartPage.getProductsCost().stream().map(s -> Integer.parseInt(s)).reduce(0, (x, y) -> x - y);
+		int sum = cartPage.getProductsCost().stream().map(s -> Integer.parseInt(s)).reduce(0, (x, y) -> x + y);
 		
 		Assert.assertEquals(sum, totalInCart);
-		System.out.println(sum);
+	
 	}
 
 	@Test(dataProvider = "data")
@@ -68,6 +68,8 @@ public class CartTests extends BaseTest {
 		List<HashMap<Object,Object>> data=getJsonDataToMap(filePath);
 		//data.get(index) is a  hashMap 
 		return new Object[][] {{data.get(0)},{data.get(1)}};
+		//
+		
 		
 	}
 }

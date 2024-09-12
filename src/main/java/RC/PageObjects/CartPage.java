@@ -39,6 +39,9 @@ public class CartPage extends AbstractComponent {
 	@FindBy(xpath="//span[normalize-space()='Total']/following-sibling::span[@class=\"value\"]")
 	WebElement totalValueElement;
 	
+	@FindBy(xpath="//div[@class=\"ngx-spinner-overlay\"]")
+	WebElement toasterMessage;
+	
 	
 	List<String> cartItemNames=new ArrayList<String>();	
 	//List<String> cartItemNames=cartItems.stream().map(p->p.getText()).collect(Collectors.toList());
@@ -74,6 +77,7 @@ public class CartPage extends AbstractComponent {
 	}
 	
 	public String getTotal() {
+		//System.out.println(totalValueElement.getText().split("\\$")[1]);
 		return totalValueElement.getText().split("\\$")[1];
 	}
 	

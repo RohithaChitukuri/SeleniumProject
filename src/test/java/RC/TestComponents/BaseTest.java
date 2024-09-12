@@ -14,12 +14,10 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.devtools.v126.page.model.Screenshot;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -55,11 +53,19 @@ public class BaseTest {
 		FileInputStream f = new FileInputStream(
 				System.getProperty("user.dir") + "\\src\\main\\java\\RC\\Resources\\GlobalData.properties");
 		prop.load(f);
-		String browserName = prop.getProperty("browser");
+		String browserName = System.getProperty("browser")!=null?System.getProperty("browser"): prop.getProperty("browser");
 		if (browserName.equalsIgnoreCase("Chrome")) {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
-		} else {
+		} 
+		else if(browserName.equalsIgnoreCase("Firefox"))
+		{
+			WebDriverManager.firefoxdriver().setup();
+			driver = new FirefoxDriver();
+			
+		}
+		
+		else {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 		}
