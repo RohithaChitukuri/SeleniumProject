@@ -39,8 +39,13 @@ public class ProductCataloguePage extends AbstractComponent {
 			if(getProductList().stream().anyMatch(p->p.findElement(By.cssSelector("b")).getText().equalsIgnoreCase(i)))
 			{ 
 				//adding product name of found items to foundWords list
-				foundWords.add(product.stream().filter(p -> p.findElement(By.cssSelector("b")).getText().equalsIgnoreCase(i))
-						.findFirst().orElse(null).findElement(By.cssSelector("b")).getText());
+				
+				  foundWords.add(product.stream().filter(p ->
+				   p.findElement(By.cssSelector("b")).getText().equalsIgnoreCase(i))
+				  .findFirst().orElse(null).findElement(By.cssSelector("b")).getText());
+				 
+				
+			
 				//clicking 'add to cart' of the found item 
 				/*
 				 * product.stream().filter(p ->

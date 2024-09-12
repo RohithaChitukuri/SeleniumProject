@@ -56,11 +56,12 @@ public class BaseTest {
 				System.getProperty("user.dir") + "\\src\\main\\java\\RC\\Resources\\GlobalData.properties");
 		prop.load(f);
 		String browserName = System.getProperty("browser")!=null?System.getProperty("browser"): prop.getProperty("browser");
-		if (browserName.toLowerCase().contains("Chrome")) {
+		if (browserName.toLowerCase().contains("chrome")) {
 			ChromeOptions options=new ChromeOptions();
 			WebDriverManager.chromedriver().setup();
 			if(browserName.toLowerCase().contains("headless")) {
-				options.addArguments("headless");
+				options.addArguments("--headless=new");
+				System.out.println("we are in headless mode");
 			 }
 			driver = new ChromeDriver(options);
 			driver.manage().window().setSize(new Dimension(1400,900));

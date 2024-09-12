@@ -7,7 +7,7 @@
         <methods>
           <include name="initializeDriver"/>
           <include name="tearDown"/>
-          <include name="checkTotal" invocation-numbers="0 1"/>
+          <include name="checkCartProductsSameAsFoundItems" invocation-numbers="0 1"/>
         </methods>
       </class> <!-- RC.Tests.CartTests -->
     </classes>
