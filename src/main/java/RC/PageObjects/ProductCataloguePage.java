@@ -42,11 +42,20 @@ public class ProductCataloguePage extends AbstractComponent {
 				foundWords.add(product.stream().filter(p -> p.findElement(By.cssSelector("b")).getText().equalsIgnoreCase(i))
 						.findFirst().orElse(null).findElement(By.cssSelector("b")).getText());
 				//clicking 'add to cart' of the found item 
-				product.stream().filter(p -> p.findElement(By.cssSelector("b")).getText().equalsIgnoreCase(i))
-						.findFirst().orElse(null).findElement(By.cssSelector("button:last-of-type")).click();
+				/*
+				 * product.stream().filter(p ->
+				 * (p.findElement(By.cssSelector("b")).getText().equalsIgnoreCase(i)))
+				 * .findFirst().orElse(null).findElement(By.cssSelector("button:last-of-type")).
+				 * click();
+				 */
+				
+				product.stream().filter(p -> 
+				(p.findElement(By.cssSelector("b")).getText().equalsIgnoreCase(i)))
+				.forEach(p->
+						{	
+							p.findElement(By.cssSelector("button:last-of-type")).click();
+							waitForElementToDisappear(By.cssSelector(".ngx-spinner-overlay.ng-tns-c31-1.ng-trigger.ng-trigger-fadeIn.ng-star-inserted"));});
 			}
-			
-			
 			waitForElementToDisappear(toastContainerLocator);
 	
 		});

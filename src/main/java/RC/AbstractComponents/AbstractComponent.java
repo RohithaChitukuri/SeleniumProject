@@ -19,10 +19,15 @@ public class AbstractComponent {
 		PageFactory.initElements(driver, this);
 		Actions actions=new Actions(driver);
 	}
+	
+	@FindBy(css=".btn.btn-custom")
+	List<WebElement> headerButtons;
+	
 	@FindBy(xpath="//button[@routerlink=\"/dashboard/cart\"]")
 	WebElement cartHeader;
 	
 	public void clickOnCart() {
+		waitForElementToAppear(headerButtons);
 		waitForElementToAppear(cartHeader);
 		cartHeader.click();
 	}
