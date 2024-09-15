@@ -21,7 +21,7 @@ public class CartTests extends BaseTest {
 	
 
 	@Test(dataProvider = "data")
-	public void printProductsCost(HashMap<Object,Object> cartData) {
+	public void printProductsCost(HashMap<Object,Object> cartData) throws IOException {
 		LoginPage loginPage = new LoginPage(driver);
 		loginPage.goTo();
 		loginPage.loginApplication((String)cartData.get("userId"), (String)cartData.get("password"));
@@ -33,7 +33,7 @@ public class CartTests extends BaseTest {
 	}
 
 	@Test(dataProvider = "data",retryAnalyzer=RC.TestComponents.Retry.class)
-	public void checkTotal(HashMap<Object,Object> cartData) throws InterruptedException {
+	public void checkTotal(HashMap<Object,Object> cartData) throws InterruptedException, IOException {
 		LoginPage loginPage = new LoginPage(driver);
 		loginPage.goTo();
 		loginPage.loginApplication((String)cartData.get("userId"), (String)cartData.get("password"));
@@ -49,7 +49,7 @@ public class CartTests extends BaseTest {
 	}
 
 	@Test(dataProvider = "data")
-	public void checkCartProductsSameAsFoundItems(HashMap<Object,Object> cartData) {
+	public void checkCartProductsSameAsFoundItems(HashMap<Object,Object> cartData) throws IOException {
 		List<String> foundWords = new ArrayList<String>();
 		LoginPage loginPage = new LoginPage(driver);
 		loginPage.goTo();

@@ -1,69 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-12T08:05:21 MDT" name="Suite" finished-at="2024-09-12T08:13:03 MDT" duration-ms="462175">
+  <suite started-at="2024-09-15T06:49:16 MDT" name="Suite" finished-at="2024-09-15T06:53:41 MDT" duration-ms="265557">
     <groups>
     </groups>
-    <test started-at="2024-09-12T08:05:21 MDT" name="Test" finished-at="2024-09-12T08:13:03 MDT" duration-ms="462175">
-      <class name="RC.Tests.SubmitOrder">
-        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:RC.Tests.SubmitOrder@359df09a]" started-at="2024-09-12T08:05:21 MDT" name="initializeDriver" finished-at="2024-09-12T08:05:31 MDT" duration-ms="10252" status="PASS">
+    <test started-at="2024-09-15T06:49:16 MDT" name="Test" finished-at="2024-09-15T06:53:41 MDT" duration-ms="265557">
+      <class name="RC.Tests.CartUsingExcelTests">
+        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:RC.Tests.CartUsingExcelTests@433defed]" started-at="2024-09-15T06:49:22 MDT" name="initializeDriver" finished-at="2024-09-15T06:49:44 MDT" duration-ms="22036" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriver -->
-        <test-method signature="checkIfTheProductsAreAvailable()[pri:0, instance:RC.Tests.SubmitOrder@359df09a]" started-at="2024-09-12T08:05:31 MDT" name="checkIfTheProductsAreAvailable" finished-at="2024-09-12T08:06:23 MDT" duration-ms="52172" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkIfTheProductsAreAvailable -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:RC.Tests.SubmitOrder@359df09a]" started-at="2024-09-12T08:06:23 MDT" name="tearDown" finished-at="2024-09-12T08:06:25 MDT" duration-ms="1549" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:RC.Tests.SubmitOrder@359df09a]" started-at="2024-09-12T08:06:25 MDT" name="initializeDriver" finished-at="2024-09-12T08:06:27 MDT" duration-ms="2308" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeDriver -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:RC.Tests.SubmitOrder@359df09a]" started-at="2024-09-12T08:06:27 MDT" name="submitOrder" data-provider="data" finished-at="2024-09-12T08:07:23 MDT" duration-ms="55517" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{searchWords=[ZARA COAT 3, IPHONE 13 PRO], password=Rohitha@26, userId=rohitha03@gmail.com}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:RC.Tests.SubmitOrder@359df09a]" started-at="2024-09-12T08:07:23 MDT" name="tearDown" finished-at="2024-09-12T08:07:23 MDT" duration-ms="666" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:RC.Tests.SubmitOrder@359df09a]" started-at="2024-09-12T08:07:23 MDT" name="initializeDriver" finished-at="2024-09-12T08:07:25 MDT" duration-ms="1604" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeDriver -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:RC.Tests.SubmitOrder@359df09a]" started-at="2024-09-12T08:07:25 MDT" name="submitOrder" data-provider="data" finished-at="2024-09-12T08:08:14 MDT" duration-ms="48730" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{searchWords=[ZARA COAT 3], password=Rohitha@26, userId=rohitha03@gmail.com}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:RC.Tests.SubmitOrder@359df09a]" started-at="2024-09-12T08:08:14 MDT" name="tearDown" finished-at="2024-09-12T08:08:14 MDT" duration-ms="500" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- RC.Tests.SubmitOrder -->
-      <class name="RC.Tests.CartTests">
-        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:RC.Tests.CartTests@5965d37]" started-at="2024-09-12T08:08:15 MDT" name="initializeDriver" finished-at="2024-09-12T08:08:17 MDT" duration-ms="2500" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeDriver -->
-        <test-method signature="checkCartProductsSameAsFoundItems(java.util.HashMap)[pri:0, instance:RC.Tests.CartTests@5965d37]" started-at="2024-09-12T08:08:17 MDT" name="checkCartProductsSameAsFoundItems" data-provider="data" finished-at="2024-09-12T08:09:05 MDT" duration-ms="47562" status="PASS">
+        <test-method signature="checkCartProductsSameAsFoundItems(java.util.HashMap)[pri:0, instance:RC.Tests.CartUsingExcelTests@433defed]" started-at="2024-09-15T06:49:44 MDT" name="checkCartProductsSameAsFoundItems" data-provider="data" finished-at="2024-09-15T06:50:35 MDT" duration-ms="50990" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -74,34 +22,34 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkCartProductsSameAsFoundItems -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:RC.Tests.CartTests@5965d37]" started-at="2024-09-12T08:09:05 MDT" name="tearDown" finished-at="2024-09-12T08:09:06 MDT" duration-ms="1208" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:RC.Tests.CartUsingExcelTests@433defed]" started-at="2024-09-15T06:50:35 MDT" name="tearDown" finished-at="2024-09-15T06:50:38 MDT" duration-ms="3666" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:RC.Tests.CartTests@5965d37]" started-at="2024-09-12T08:09:06 MDT" name="initializeDriver" finished-at="2024-09-12T08:09:09 MDT" duration-ms="2576" status="PASS">
+        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:RC.Tests.CartUsingExcelTests@433defed]" started-at="2024-09-15T06:50:38 MDT" name="initializeDriver" finished-at="2024-09-15T06:50:43 MDT" duration-ms="4413" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriver -->
-        <test-method signature="checkCartProductsSameAsFoundItems(java.util.HashMap)[pri:0, instance:RC.Tests.CartTests@5965d37]" started-at="2024-09-12T08:09:09 MDT" name="checkCartProductsSameAsFoundItems" data-provider="data" finished-at="2024-09-12T08:09:50 MDT" duration-ms="40776" status="PASS">
+        <test-method signature="checkCartProductsSameAsFoundItems(java.util.HashMap)[pri:0, instance:RC.Tests.CartUsingExcelTests@433defed]" started-at="2024-09-15T06:50:43 MDT" name="checkCartProductsSameAsFoundItems" data-provider="data" finished-at="2024-09-15T06:51:21 MDT" duration-ms="38180" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{searchWords=[ZARA COAT 3], password=Rohitha@26, userId=rohitha03@gmail.com}]]>
+                <![CDATA[{searchWords=[ZARA COAT 3, ADIDAS ORIGINAL], password=Rohitha@26, userId=rohitha03@gmail.com}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkCartProductsSameAsFoundItems -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:RC.Tests.CartTests@5965d37]" started-at="2024-09-12T08:09:50 MDT" name="tearDown" finished-at="2024-09-12T08:09:51 MDT" duration-ms="1333" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:RC.Tests.CartUsingExcelTests@433defed]" started-at="2024-09-15T06:51:21 MDT" name="tearDown" finished-at="2024-09-15T06:51:23 MDT" duration-ms="2634" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:RC.Tests.CartTests@5965d37]" started-at="2024-09-12T08:09:51 MDT" name="initializeDriver" finished-at="2024-09-12T08:09:53 MDT" duration-ms="2533" status="PASS">
+        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:RC.Tests.CartUsingExcelTests@433defed]" started-at="2024-09-15T06:51:24 MDT" name="initializeDriver" finished-at="2024-09-15T06:51:28 MDT" duration-ms="4484" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriver -->
-        <test-method signature="checkTotal(java.util.HashMap)[pri:0, instance:RC.Tests.CartTests@5965d37]" started-at="2024-09-12T08:09:53 MDT" name="checkTotal" data-provider="data" finished-at="2024-09-12T08:10:51 MDT" duration-ms="57805" status="PASS">
+        <test-method signature="checkTotal(java.util.HashMap)[pri:0, instance:RC.Tests.CartUsingExcelTests@433defed]" started-at="2024-09-15T06:51:28 MDT" name="checkTotal" data-provider="data" finished-at="2024-09-15T06:52:11 MDT" duration-ms="42481" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -112,34 +60,34 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkTotal -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:RC.Tests.CartTests@5965d37]" started-at="2024-09-12T08:10:51 MDT" name="tearDown" finished-at="2024-09-12T08:10:52 MDT" duration-ms="688" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:RC.Tests.CartUsingExcelTests@433defed]" started-at="2024-09-15T06:52:11 MDT" name="tearDown" finished-at="2024-09-15T06:52:11 MDT" duration-ms="559" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:RC.Tests.CartTests@5965d37]" started-at="2024-09-12T08:10:52 MDT" name="initializeDriver" finished-at="2024-09-12T08:10:54 MDT" duration-ms="2131" status="PASS">
+        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:RC.Tests.CartUsingExcelTests@433defed]" started-at="2024-09-15T06:52:11 MDT" name="initializeDriver" finished-at="2024-09-15T06:52:14 MDT" duration-ms="3239" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriver -->
-        <test-method signature="checkTotal(java.util.HashMap)[pri:0, instance:RC.Tests.CartTests@5965d37]" started-at="2024-09-12T08:10:54 MDT" name="checkTotal" data-provider="data" finished-at="2024-09-12T08:11:14 MDT" duration-ms="19628" status="PASS">
+        <test-method signature="checkTotal(java.util.HashMap)[pri:0, instance:RC.Tests.CartUsingExcelTests@433defed]" started-at="2024-09-15T06:52:14 MDT" name="checkTotal" data-provider="data" finished-at="2024-09-15T06:52:52 MDT" duration-ms="37763" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{searchWords=[ZARA COAT 3], password=Rohitha@26, userId=rohitha03@gmail.com}]]>
+                <![CDATA[{searchWords=[ZARA COAT 3, ADIDAS ORIGINAL], password=Rohitha@26, userId=rohitha03@gmail.com}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkTotal -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:RC.Tests.CartTests@5965d37]" started-at="2024-09-12T08:11:14 MDT" name="tearDown" finished-at="2024-09-12T08:11:15 MDT" duration-ms="969" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:RC.Tests.CartUsingExcelTests@433defed]" started-at="2024-09-15T06:52:52 MDT" name="tearDown" finished-at="2024-09-15T06:52:53 MDT" duration-ms="381" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:RC.Tests.CartTests@5965d37]" started-at="2024-09-12T08:11:15 MDT" name="initializeDriver" finished-at="2024-09-12T08:11:16 MDT" duration-ms="1671" status="PASS">
+        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:RC.Tests.CartUsingExcelTests@433defed]" started-at="2024-09-15T06:52:53 MDT" name="initializeDriver" finished-at="2024-09-15T06:52:54 MDT" duration-ms="1342" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriver -->
-        <test-method signature="printProductsCost(java.util.HashMap)[pri:0, instance:RC.Tests.CartTests@5965d37]" started-at="2024-09-12T08:11:16 MDT" name="printProductsCost" data-provider="data" finished-at="2024-09-12T08:11:59 MDT" duration-ms="42153" status="PASS">
+        <test-method signature="printProductsCost(java.util.HashMap)[pri:0, instance:RC.Tests.CartUsingExcelTests@433defed]" started-at="2024-09-15T06:52:54 MDT" name="printProductsCost" data-provider="data" finished-at="2024-09-15T06:53:25 MDT" duration-ms="30852" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -150,15 +98,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- printProductsCost -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:RC.Tests.CartTests@5965d37]" started-at="2024-09-12T08:11:59 MDT" name="tearDown" finished-at="2024-09-12T08:12:01 MDT" duration-ms="2795" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:RC.Tests.CartUsingExcelTests@433defed]" started-at="2024-09-15T06:53:25 MDT" name="tearDown" finished-at="2024-09-15T06:53:26 MDT" duration-ms="801" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:RC.Tests.CartTests@5965d37]" started-at="2024-09-12T08:12:01 MDT" name="initializeDriver" finished-at="2024-09-12T08:12:09 MDT" duration-ms="7624" status="PASS">
+        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:RC.Tests.CartUsingExcelTests@433defed]" started-at="2024-09-15T06:53:26 MDT" name="initializeDriver" finished-at="2024-09-15T06:53:27 MDT" duration-ms="1705" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriver -->
-        <test-method signature="printProductsCost(java.util.HashMap)[pri:0, instance:RC.Tests.CartTests@5965d37]" started-at="2024-09-12T08:12:09 MDT" name="printProductsCost" data-provider="data" finished-at="2024-09-12T08:13:02 MDT" duration-ms="52790" status="PASS">
+        <test-method signature="printProductsCost(java.util.HashMap)[pri:0, instance:RC.Tests.CartUsingExcelTests@433defed]" started-at="2024-09-15T06:53:27 MDT" name="printProductsCost" data-provider="data" finished-at="2024-09-15T06:53:39 MDT" duration-ms="12110" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -166,14 +114,93 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button _ngcontent-qjf-c33="" routerlink="/dashboard/cart" class="btn btn-custom" style="margin-top: -10px;" tabindex="0">...</button> is not clickable at point (2551, 27). Other element would receive the click: <div _ngcontent-qjf-c31="" class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;">...</div>
+  (Session info: chrome=128.0.6613.138)
+Build info: version: '4.24.0', revision: '748ffc9bc3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [06afa7c6202db05a1185e1eca42681ee, clickElement {id=f.0632040F64914258191E5791C0C6D982.d.F4AFF26A8B36C578EDA0E7AEDF311A54.e.92}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\SUNNY\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49975}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49975/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (06afa7c6202db05a1185e1eca42681ee)] -> xpath: //button[@routerlink="/dashboard/cart"]]
+Session ID: 06afa7c6202db05a1185e1eca42681ee]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button _ngcontent-qjf-c33="" routerlink="/dashboard/cart" class="btn btn-custom" style="margin-top: -10px;" tabindex="0">...</button> is not clickable at point (2551, 27). Other element would receive the click: <div _ngcontent-qjf-c31="" class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;">...</div>
+  (Session info: chrome=128.0.6613.138)
+Build info: version: '4.24.0', revision: '748ffc9bc3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [06afa7c6202db05a1185e1eca42681ee, clickElement {id=f.0632040F64914258191E5791C0C6D982.d.F4AFF26A8B36C578EDA0E7AEDF311A54.e.92}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\SUNNY\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49975}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49975/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (06afa7c6202db05a1185e1eca42681ee)] -> xpath: //button[@routerlink="/dashboard/cart"]]
+Session ID: 06afa7c6202db05a1185e1eca42681ee
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+at RC.AbstractComponents.AbstractComponent.clickOnCart(AbstractComponent.java:32)
+at RC.Tests.CartUsingExcelTests.printProductsCost(CartUsingExcelTests.java:33)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- printProductsCost -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:RC.Tests.CartTests@5965d37]" started-at="2024-09-12T08:13:02 MDT" name="tearDown" finished-at="2024-09-12T08:13:03 MDT" duration-ms="1238" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:RC.Tests.CartUsingExcelTests@433defed]" started-at="2024-09-15T06:53:41 MDT" name="tearDown" finished-at="2024-09-15T06:53:41 MDT" duration-ms="372" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- RC.Tests.CartTests -->
+      </class> <!-- RC.Tests.CartUsingExcelTests -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

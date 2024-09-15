@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\SUNNY\eclipse-workspace\GitSample\TestSuites\RegressionSuite1.xml</span>
+                    <span>C:\Users\SUNNY\eclipse-workspace\GitSample\TestSuites\CartTestsUsingExcelSuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">9 methods,   9 passed</span>
+                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="RC.Tests.CartUsingExcelTests" class="method navigator-link" hash-for-method="printProductsCost({searchWords=[ZARA COAT 3], password=Rohitha@26, userId=rohitha03@gmail.com})">printProductsCost({searchWords=[ZARA COAT 3], password=Rohitha@26, userId=rohitha03@gmail.com})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,47 +117,27 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="RC.Tests.CartTests" class="method navigator-link" hash-for-method="checkCartProductsSameAsFoundItems({searchWords=[ZARA COAT 3], password=Rohitha@26, userId=rohitha03@gmail.com})">checkCartProductsSameAsFoundItems({searchWords=[ZARA COAT 3], password=Rohitha@26, userId=rohitha03@gmail.com})</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="RC.Tests.CartUsingExcelTests" class="method navigator-link" hash-for-method="checkCartProductsSameAsFoundItems({searchWords=[ZARA COAT 3, ADIDAS ORIGINAL], password=Rohitha@26, userId=rohitha03@gmail.com})">checkCartProductsSameAsFoundItems({searchWords=[ZARA COAT 3, ADIDAS ORIGINAL], password=Rohitha@26, userId=rohitha03@gmail.com})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="RC.Tests.CartTests" class="method navigator-link" hash-for-method="checkCartProductsSameAsFoundItems({searchWords=[ZARA COAT 3, IPHONE 13 PRO], password=Rohitha@26, userId=rohitha03@gmail.com})">checkCartProductsSameAsFoundItems({searchWords=[ZARA COAT 3, IPHONE 13 PRO], password=Rohitha@26, userId=rohitha03@gmail.com})</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="RC.Tests.CartUsingExcelTests" class="method navigator-link" hash-for-method="checkCartProductsSameAsFoundItems({searchWords=[ZARA COAT 3, IPHONE 13 PRO], password=Rohitha@26, userId=rohitha03@gmail.com})">checkCartProductsSameAsFoundItems({searchWords=[ZARA COAT 3, IPHONE 13 PRO], password=Rohitha@26, userId=rohitha03@gmail.com})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="RC.Tests.SubmitOrder" class="method navigator-link" hash-for-method="checkIfTheProductsAreAvailable">checkIfTheProductsAreAvailable</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="RC.Tests.CartUsingExcelTests" class="method navigator-link" hash-for-method="checkTotal({searchWords=[ZARA COAT 3, ADIDAS ORIGINAL], password=Rohitha@26, userId=rohitha03@gmail.com})">checkTotal({searchWords=[ZARA COAT 3, ADIDAS ORIGINAL], password=Rohitha@26, userId=rohitha03@gmail.com})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="RC.Tests.CartTests" class="method navigator-link" hash-for-method="checkTotal({searchWords=[ZARA COAT 3], password=Rohitha@26, userId=rohitha03@gmail.com})">checkTotal({searchWords=[ZARA COAT 3], password=Rohitha@26, userId=rohitha03@gmail.com})</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="RC.Tests.CartUsingExcelTests" class="method navigator-link" hash-for-method="checkTotal({searchWords=[ZARA COAT 3, IPHONE 13 PRO], password=Rohitha@26, userId=rohitha03@gmail.com})">checkTotal({searchWords=[ZARA COAT 3, IPHONE 13 PRO], password=Rohitha@26, userId=rohitha03@gmail.com})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="RC.Tests.CartTests" class="method navigator-link" hash-for-method="checkTotal({searchWords=[ZARA COAT 3, IPHONE 13 PRO], password=Rohitha@26, userId=rohitha03@gmail.com})">checkTotal({searchWords=[ZARA COAT 3, IPHONE 13 PRO], password=Rohitha@26, userId=rohitha03@gmail.com})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="RC.Tests.CartTests" class="method navigator-link" hash-for-method="printProductsCost({searchWords=[ZARA COAT 3, IPHONE 13 PRO], password=Rohitha@26, userId=rohitha03@gmail.com})">printProductsCost({searchWords=[ZARA COAT 3, IPHONE 13 PRO], password=Rohitha@26, userId=rohitha03@gmail.com})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="RC.Tests.CartTests" class="method navigator-link" hash-for-method="printProductsCost({searchWords=[ZARA COAT 3], password=Rohitha@26, userId=rohitha03@gmail.com})">printProductsCost({searchWords=[ZARA COAT 3], password=Rohitha@26, userId=rohitha03@gmail.com})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="RC.Tests.SubmitOrder" class="method navigator-link" hash-for-method="submitOrder({searchWords=[ZARA COAT 3], password=Rohitha@26, userId=rohitha03@gmail.com})">submitOrder({searchWords=[ZARA COAT 3], password=Rohitha@26, userId=rohitha03@gmail.com})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="RC.Tests.SubmitOrder" class="method navigator-link" hash-for-method="submitOrder({searchWords=[ZARA COAT 3, IPHONE 13 PRO], password=Rohitha@26, userId=rohitha03@gmail.com})">submitOrder({searchWords=[ZARA COAT 3, IPHONE 13 PRO], password=Rohitha@26, userId=rohitha03@gmail.com})</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="RC.Tests.CartUsingExcelTests" class="method navigator-link" hash-for-method="printProductsCost({searchWords=[ZARA COAT 3, IPHONE 13 PRO], password=Rohitha@26, userId=rohitha03@gmail.com})">printProductsCost({searchWords=[ZARA COAT 3, IPHONE 13 PRO], password=Rohitha@26, userId=rohitha03@gmail.com})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -158,49 +152,59 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">RC.Tests.SubmitOrder</span>
+              <img src="failed.png"/>
+              <span class="class-name">RC.Tests.CartUsingExcelTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="checkIfTheProductsAreAvailable">
-                  </a> <!-- checkIfTheProductsAreAvailable -->
-                  <span class="method-name">checkIfTheProductsAreAvailable</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="submitOrder({searchWords=[ZARA COAT 3], password=Rohitha@26, userId=rohitha03@gmail.com})">
-                  </a> <!-- submitOrder({searchWords=[ZARA COAT 3], password=Rohitha@26, userId=rohitha03@gmail.com}) -->
-                  <span class="method-name">submitOrder</span>
+                  <a name="printProductsCost({searchWords=[ZARA COAT 3], password=Rohitha@26, userId=rohitha03@gmail.com})">
+                  </a> <!-- printProductsCost({searchWords=[ZARA COAT 3], password=Rohitha@26, userId=rohitha03@gmail.com}) -->
+                  <span class="method-name">printProductsCost</span>
                   <span class="parameters">({searchWords=[ZARA COAT 3], password=Rohitha@26, userId=rohitha03@gmail.com})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="submitOrder({searchWords=[ZARA COAT 3, IPHONE 13 PRO], password=Rohitha@26, userId=rohitha03@gmail.com})">
-                  </a> <!-- submitOrder({searchWords=[ZARA COAT 3, IPHONE 13 PRO], password=Rohitha@26, userId=rohitha03@gmail.com}) -->
-                  <span class="method-name">submitOrder</span>
-                  <span class="parameters">({searchWords=[ZARA COAT 3, IPHONE 13 PRO], password=Rohitha@26, userId=rohitha03@gmail.com})</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button _ngcontent-qjf-c33=&quot;&quot; routerlink=&quot;/dashboard/cart&quot; class=&quot;btn btn-custom&quot; style=&quot;margin-top: -10px;&quot; tabindex=&quot;0&quot;&gt;...&lt;/button&gt; is not clickable at point (2551, 27). Other element would receive the click: &lt;div _ngcontent-qjf-c31=&quot;&quot; class=&quot;ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating&quot; style=&quot;background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=128.0.6613.138)
+Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [06afa7c6202db05a1185e1eca42681ee, clickElement {id=f.0632040F64914258191E5791C0C6D982.d.F4AFF26A8B36C578EDA0E7AEDF311A54.e.92}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\SUNNY\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49975}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49975/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (06afa7c6202db05a1185e1eca42681ee)] -&gt; xpath: //button[@routerlink=&quot;/dashboard/cart&quot;]]
+Session ID: 06afa7c6202db05a1185e1eca42681ee
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+	at RC.AbstractComponents.AbstractComponent.clickOnCart(AbstractComponent.java:32)
+	at RC.Tests.CartUsingExcelTests.printProductsCost(CartUsingExcelTests.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">RC.Tests.CartTests</span>
+              <span class="class-name">RC.Tests.CartUsingExcelTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="checkCartProductsSameAsFoundItems({searchWords=[ZARA COAT 3], password=Rohitha@26, userId=rohitha03@gmail.com})">
-                  </a> <!-- checkCartProductsSameAsFoundItems({searchWords=[ZARA COAT 3], password=Rohitha@26, userId=rohitha03@gmail.com}) -->
+                  <a name="checkCartProductsSameAsFoundItems({searchWords=[ZARA COAT 3, ADIDAS ORIGINAL], password=Rohitha@26, userId=rohitha03@gmail.com})">
+                  </a> <!-- checkCartProductsSameAsFoundItems({searchWords=[ZARA COAT 3, ADIDAS ORIGINAL], password=Rohitha@26, userId=rohitha03@gmail.com}) -->
                   <span class="method-name">checkCartProductsSameAsFoundItems</span>
-                  <span class="parameters">({searchWords=[ZARA COAT 3], password=Rohitha@26, userId=rohitha03@gmail.com})</span>
+                  <span class="parameters">({searchWords=[ZARA COAT 3, ADIDAS ORIGINAL], password=Rohitha@26, userId=rohitha03@gmail.com})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -213,10 +217,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="checkTotal({searchWords=[ZARA COAT 3], password=Rohitha@26, userId=rohitha03@gmail.com})">
-                  </a> <!-- checkTotal({searchWords=[ZARA COAT 3], password=Rohitha@26, userId=rohitha03@gmail.com}) -->
+                  <a name="checkTotal({searchWords=[ZARA COAT 3, ADIDAS ORIGINAL], password=Rohitha@26, userId=rohitha03@gmail.com})">
+                  </a> <!-- checkTotal({searchWords=[ZARA COAT 3, ADIDAS ORIGINAL], password=Rohitha@26, userId=rohitha03@gmail.com}) -->
                   <span class="method-name">checkTotal</span>
-                  <span class="parameters">({searchWords=[ZARA COAT 3], password=Rohitha@26, userId=rohitha03@gmail.com})</span>
+                  <span class="parameters">({searchWords=[ZARA COAT 3, ADIDAS ORIGINAL], password=Rohitha@26, userId=rohitha03@gmail.com})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -235,20 +239,12 @@
                   <span class="parameters">({searchWords=[ZARA COAT 3, IPHONE 13 PRO], password=Rohitha@26, userId=rohitha03@gmail.com})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="printProductsCost({searchWords=[ZARA COAT 3], password=Rohitha@26, userId=rohitha03@gmail.com})">
-                  </a> <!-- printProductsCost({searchWords=[ZARA COAT 3], password=Rohitha@26, userId=rohitha03@gmail.com}) -->
-                  <span class="method-name">printProductsCost</span>
-                  <span class="parameters">({searchWords=[ZARA COAT 3], password=Rohitha@26, userId=rohitha03@gmail.com})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\SUNNY\eclipse-workspace\GitSample\TestSuites\RegressionSuite1.xml</span>
+            <span class="header-content">C:\Users\SUNNY\eclipse-workspace\GitSample\TestSuites\CartTestsUsingExcelSuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -260,8 +256,7 @@
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;RC.Tests.SubmitOrder&quot;/&gt;
-      &lt;class name=&quot;RC.Tests.CartTests&quot;/&gt;
+      &lt;class name=&quot;RC.Tests.CartUsingExcelTests&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -275,7 +270,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -301,48 +296,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(9);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'checkTotal')
-data.setCell(0, 2, 'RC.Tests.CartTests')
-data.setCell(0, 3, 57805);
+data.setCell(0, 1, 'checkCartProductsSameAsFoundItems')
+data.setCell(0, 2, 'RC.Tests.CartUsingExcelTests')
+data.setCell(0, 3, 50990);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'submitOrder')
-data.setCell(1, 2, 'RC.Tests.SubmitOrder')
-data.setCell(1, 3, 55517);
+data.setCell(1, 1, 'checkTotal')
+data.setCell(1, 2, 'RC.Tests.CartUsingExcelTests')
+data.setCell(1, 3, 42481);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'printProductsCost')
-data.setCell(2, 2, 'RC.Tests.CartTests')
-data.setCell(2, 3, 52790);
+data.setCell(2, 1, 'checkCartProductsSameAsFoundItems')
+data.setCell(2, 2, 'RC.Tests.CartUsingExcelTests')
+data.setCell(2, 3, 38180);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'checkIfTheProductsAreAvailable')
-data.setCell(3, 2, 'RC.Tests.SubmitOrder')
-data.setCell(3, 3, 52172);
+data.setCell(3, 1, 'checkTotal')
+data.setCell(3, 2, 'RC.Tests.CartUsingExcelTests')
+data.setCell(3, 3, 37763);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'submitOrder')
-data.setCell(4, 2, 'RC.Tests.SubmitOrder')
-data.setCell(4, 3, 48730);
+data.setCell(4, 1, 'printProductsCost')
+data.setCell(4, 2, 'RC.Tests.CartUsingExcelTests')
+data.setCell(4, 3, 30852);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'checkCartProductsSameAsFoundItems')
-data.setCell(5, 2, 'RC.Tests.CartTests')
-data.setCell(5, 3, 47562);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'printProductsCost')
-data.setCell(6, 2, 'RC.Tests.CartTests')
-data.setCell(6, 3, 42153);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'checkCartProductsSameAsFoundItems')
-data.setCell(7, 2, 'RC.Tests.CartTests')
-data.setCell(7, 3, 40776);
-data.setCell(8, 0, 8)
-data.setCell(8, 1, 'checkTotal')
-data.setCell(8, 2, 'RC.Tests.CartTests')
-data.setCell(8, 3, 19628);
+data.setCell(5, 1, 'printProductsCost')
+data.setCell(5, 2, 'RC.Tests.CartUsingExcelTests')
+data.setCell(5, 3, 12110);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 minutes</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -368,117 +351,80 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">RC.Tests.SubmitOrder</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">RC.Tests.CartUsingExcelTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initializeDriver</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">checkIfTheProductsAreAvailable</span>
-                <span class="method-start">10254 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">62443 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">initializeDriver</span>
-                <span class="method-start">64000 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">submitOrder({searchWords=[ZARA COAT 3, IPHONE 13 PRO], password=Rohitha@26, userId=rohitha03@gmail.com})</span>
-                <span class="method-start">66308 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">121828 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">initializeDriver</span>
-                <span class="method-start">122495 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">submitOrder({searchWords=[ZARA COAT 3], password=Rohitha@26, userId=rohitha03@gmail.com})</span>
-                <span class="method-start">124100 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">172832 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">RC.Tests.CartTests</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">initializeDriver</span>
-                <span class="method-start">174051 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
                 <span class="method-name">checkCartProductsSameAsFoundItems({searchWords=[ZARA COAT 3, IPHONE 13 PRO], password=Rohitha@26, userId=rohitha03@gmail.com})</span>
-                <span class="method-start">176551 ms</span>
+                <span class="method-start">22042 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">224116 ms</span>
+                <span class="method-start">73040 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initializeDriver</span>
-                <span class="method-start">225325 ms</span>
+                <span class="method-start">76709 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">checkCartProductsSameAsFoundItems({searchWords=[ZARA COAT 3], password=Rohitha@26, userId=rohitha03@gmail.com})</span>
-                <span class="method-start">227902 ms</span>
+                <span class="method-name">checkCartProductsSameAsFoundItems({searchWords=[ZARA COAT 3, ADIDAS ORIGINAL], password=Rohitha@26, userId=rohitha03@gmail.com})</span>
+                <span class="method-start">81122 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">268679 ms</span>
+                <span class="method-start">119305 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initializeDriver</span>
-                <span class="method-start">270022 ms</span>
+                <span class="method-start">122149 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkTotal({searchWords=[ZARA COAT 3, IPHONE 13 PRO], password=Rohitha@26, userId=rohitha03@gmail.com})</span>
-                <span class="method-start">272556 ms</span>
+                <span class="method-start">126633 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">330371 ms</span>
+                <span class="method-start">169117 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initializeDriver</span>
-                <span class="method-start">331060 ms</span>
+                <span class="method-start">169679 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">checkTotal({searchWords=[ZARA COAT 3], password=Rohitha@26, userId=rohitha03@gmail.com})</span>
-                <span class="method-start">333191 ms</span>
+                <span class="method-name">checkTotal({searchWords=[ZARA COAT 3, ADIDAS ORIGINAL], password=Rohitha@26, userId=rohitha03@gmail.com})</span>
+                <span class="method-start">172918 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">352824 ms</span>
+                <span class="method-start">210683 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initializeDriver</span>
-                <span class="method-start">353805 ms</span>
+                <span class="method-start">211138 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">printProductsCost({searchWords=[ZARA COAT 3, IPHONE 13 PRO], password=Rohitha@26, userId=rohitha03@gmail.com})</span>
-                <span class="method-start">355476 ms</span>
+                <span class="method-start">212480 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">397630 ms</span>
+                <span class="method-start">243332 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initializeDriver</span>
-                <span class="method-start">400425 ms</span>
+                <span class="method-start">244134 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">printProductsCost({searchWords=[ZARA COAT 3], password=Rohitha@26, userId=rohitha03@gmail.com})</span>
-                <span class="method-start">408049 ms</span>
+                <span class="method-start">245839 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">460840 ms</span>
+                <span class="method-start">259381 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

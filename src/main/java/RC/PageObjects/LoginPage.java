@@ -1,5 +1,9 @@
 package RC.PageObjects;
 
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -33,8 +37,15 @@ public class LoginPage extends AbstractComponent{
 		loginButton.click();
 		
 	}
-	public void goTo() {
-		driver.get("https://rahulshettyacademy.com/client");
+	public void goTo() throws IOException {
+		Properties prop = new Properties();
+		// FileInputStream f=new
+		// FileInputStream("C:\\Users\\SUNNY\\eclipse-workspace\\SeleniumProject1\\src\\main\\java\\RC\\Resources\\GlobalData.properties");
+		FileInputStream f = new FileInputStream(
+				System.getProperty("user.dir") + "\\src\\main\\java\\RC\\Resources\\GlobalData.properties");
+		prop.load(f);
+		String url=prop.getProperty("base_url");
+		driver.get(url);
 	}
 
 }

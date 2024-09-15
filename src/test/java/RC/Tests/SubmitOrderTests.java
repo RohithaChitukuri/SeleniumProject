@@ -21,9 +21,9 @@ import RC.PageObjects.LoginPage;
 import RC.PageObjects.ProductCataloguePage;
 import RC.TestComponents.BaseTest;
 
-public class SubmitOrder extends BaseTest {
+public class SubmitOrderTests extends BaseTest {
 
-	List<String> searchWords = Arrays.asList("ZARA COAT 3", "IPHONE 13 PRO");
+	List<String> searchWords = new ArrayList<String>();
 	
 		@Test(dataProvider = "data",retryAnalyzer=RC.TestComponents.Retry.class)
 		public void submitOrder(HashMap<Object,Object> data) throws InterruptedException, IOException {
@@ -58,7 +58,7 @@ public class SubmitOrder extends BaseTest {
 		}
 		
 		@Test
-		public void checkIfTheProductsAreAvailable() {
+		public void checkIfTheProductsAreAvailable() throws IOException {
 			List<String> foundWords=new ArrayList<String>();
 			LoginPage loginPage=new LoginPage(driver);
 			loginPage.goTo();

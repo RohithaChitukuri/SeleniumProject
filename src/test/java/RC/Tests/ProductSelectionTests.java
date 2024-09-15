@@ -13,15 +13,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
+import RC.TestComponents.BaseTest;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class ProductSelection {
+public class ProductSelectionTests extends BaseTest {
 
-	public static void main(String[] args) throws InterruptedException {
-		// TODO Auto-generated method stub
-		WebDriverManager.chromedriver().setup();
-		WebDriver driver = new ChromeDriver();
+	 @Test
+	 public void productSelection() throws InterruptedException {
 		driver.get("https://rahulshettyacademy.com/client");
 		//driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
