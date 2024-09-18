@@ -67,9 +67,6 @@ public class CartTests extends BaseTest {
 		String filePath=System.getProperty("user.dir")+"\\src\\test\\java\\RC\\TestData\\cartTestData.json";
 		List<HashMap<Object,Object>> data=getJsonDataToMap(filePath);
 		//data.get(index) is a  hashMap 
-		return new Object[][] {{data.get(0)},{data.get(1)}};
-		//
-		
-		
+		return new Object[][] {{data.get(0)},{data.get(1)}};	
 	}
 }

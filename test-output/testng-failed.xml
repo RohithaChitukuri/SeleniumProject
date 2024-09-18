@@ -7,7 +7,7 @@
         <methods>
           <include name="initializeDriver"/>
           <include name="tearDown"/>
-          <include name="printProductsCost"/>
+          <include name="checkTotal" invocation-numbers="0"/>
         </methods>
       </class> <!-- RC.Tests.CartUsingExcelTests -->
     </classes>
