@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="RC.Tests.CartUsingExcelTests">
+      <class name="RC.Tests.CartUsingDatabaseTests">
         <methods>
           <include name="initializeDriver"/>
           <include name="tearDown"/>
-          <include name="checkTotal" invocation-numbers="0"/>
+          <include name="checkTotal" invocation-numbers="0 1"/>
         </methods>
-      </class> <!-- RC.Tests.CartUsingExcelTests -->
+      </class> <!-- RC.Tests.CartUsingDatabaseTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
